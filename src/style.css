@@ -47,6 +47,13 @@ header {
 .logo__link {
 	padding: 10px;
 	display: block;
+	display: none;
+}
+
+@media (min-width: 600px) {
+	.logo__link {
+		display: block;
+	}
 }
 
 .logo__image {
