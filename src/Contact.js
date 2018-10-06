@@ -2,8 +2,8 @@ import React from "react";
 
 
 const Contact = () => (
-  <div>
-    This is the Contact page
+  <div className="container">
+    <h1>Contact</h1>
   </div>);
 
 export default Contact;

@@ -2,8 +2,8 @@ import React from "react";
 
 
 const Work = () => (
-  <div>
-    This is the work page
+  <div className="container">
+    <h1>Work</h1>
   </div>);
 
 export default Work;

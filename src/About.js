@@ -2,8 +2,8 @@ import React from "react";
 
 
 const About = () => (
-  <div>
-    This is the about page
+  <div className="container">
+    <h1>About</h1>
   </div>);
 
 export default About;
