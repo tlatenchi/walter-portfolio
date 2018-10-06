@@ -41,20 +41,22 @@ header {
 	border: 3px solid #f05e5e;
 	left: 50px;
 	color: #f05e5e;
+	display: none;
 	fill: #f05e5e;
+}
+
+@media (min-width: 600px) {
+	.logo {
+		display: block;
+	}
 }
 
 .logo__link {
 	padding: 10px;
-	display: block;
 	display: none;
 }
 
-@media (min-width: 600px) {
-	.logo__link {
-		display: block;
-	}
-}
+
 
 .logo__image {
 	/* fill: #e04242; */
