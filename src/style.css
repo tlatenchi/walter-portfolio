@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 header {
 	overflow: hidden;
+	height: 80px;
 }
 
 .logo {
@@ -48,8 +49,12 @@ header {
 	display: block;
 }
 
+.logo__image {
+	/* fill: #e04242; */
+}
+
 .page-container {
-	margin: 80px auto 0 auto;
+	margin: 0 auto 0 auto;
 }
 
 .page-container--constraint {
@@ -57,39 +62,82 @@ header {
 }
 
 .stage {
-	padding-left: 50px;
-	padding-right: 50px;	
+	padding-left: 20px;
+	padding-right: 20px;
 	
 }
+
+@media (min-width: 600px) {
+	.stage {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
 .stage__wrap {
 	padding: 32px;
-	margin-top: 80px;
-	height: calc(100vh - 50px - 80px);
+	height: calc(100vh - 20px - 80px);
 	background-image: linear-gradient(to top, #d02626, #f15f5f);
 	color: white;
 	/* background-image: linear-gradient(to bottom, #2f6fb1, #2558ae);  */
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
+	text-align: center;
+	min-height: 300px;
 }
+
+@media (min-width: 600px) {
+	.stage__wrap {
+		text-align: left;
+		height: calc(100vh - 50px - 80px);
+	}
+}
+
+
 .stage__title {
-	font-size: 200px;
+	/* font-size: 200px; */
+	font-size: 21vw;
 	margin: 0;
 	line-height: 1em;
+}
+@media (min-width: 700px) {
+	.stage__title {
+		font-size: 18vh;
+	}
+}
+
+@media (min-height: 900px) and (min-width: 700px) {
+	.stage__title {
+		font-size: 140px;
+	}
 }
 
 .stage__hook {
 	font-size: 30px;
-	margin: 0 0 0 6px;
+	margin: 0 0 20px 6px;
+	
+}
+
+@media (min-width: 600px) {
+	.stage__hook {
+		margin-bottom: 0px;
+	}
 }
 
 .stage__subtitle {
 	font-size: 30px;
-	margin-top: 0;
+	margin-top: 20px;
 	margin-bottom: 0;
 	text-align: center;
 }
+
+@media (min-width: 600px) {
+	.stage__subtitle {
+		margin-top: 0;
+	}
+}
+
 
 .stage__subtitle--emphasis {
 	color: white;
@@ -100,9 +148,10 @@ header {
 
 .main-nav {
 	padding: 0;
-	position: absolute;
-	right: 42px;
-	top: 12px;
+	width: 300px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 .main-nav__item {
 	display: inline-block;
@@ -112,6 +161,7 @@ header {
 	color: black;
 	text-decoration: none;
 	padding: 10px;
+	display: block;
 }
 
 .main-nav__link--active {
