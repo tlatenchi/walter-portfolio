@@ -190,20 +190,26 @@ header {
 }
 
 .work {
-	padding: 0;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: -16px;
+
 }
 
 .work__item {
-	padding-left: 16px;
-	width: 33.33333333%;
-	display: inline-block;
-	float: left;
+	border: 4px solid #f05e5e;
+	padding: 10px;
+	margin-bottom: 40px;
+	
 }
 
-.work__link {
-	border: 10px solid black;
+
+.work__item:hover .work__image {
+	opacity: .1;
+}
+
+.work__image-container {
+	background-color: #f05e5e;
+}
+
+.work__image {
+	background: #f05e5e;
 	display: block;
 }

@@ -43,6 +43,7 @@
   "dependencies": {
     "@reach/router": "^1.1.1",
     "babel-cli": "^6.26.0",
+    "compression": "^1.7.3",
     "emotion": "^9.2.8",
     "express": "^4.16.3",
     "parcel": "^1.10.1",

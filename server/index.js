@@ -4,6 +4,7 @@ import { renderToNodeStream } from "react-dom/server";
 import { ServerLocation } from "@reach/router";
 import fs from "fs";
 import App from "../src/App";
+import compression from 'compression'
 
 const PORT = process.env.PORT || 3000;
 
@@ -12,7 +13,7 @@ const html = fs.readFileSync("dist/index.html").toString();
 const parts = html.split("not rendered");
 
 const app = express();
-
+app.use(compression);
 app.use("/dist", express.static("dist"));
 app.use((req, res) => {
   res.write(parts[0]);
