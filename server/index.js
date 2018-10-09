@@ -14,7 +14,7 @@ const parts = html.split("not rendered");
 
 const app = express();
 app.use(compression());
-app.use("/dist", express.static("dist"));
+app.use("/dist", express.static("dist", { maxAge: 8640000 }));
 app.use((req, res) => {
   res.write(parts[0]);
   const reactMarkup = (
