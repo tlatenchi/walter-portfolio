@@ -13,7 +13,7 @@ const html = fs.readFileSync("dist/index.html").toString();
 const parts = html.split("not rendered");
 
 const app = express();
-app.use(compression);
+app.use(compression());
 app.use("/dist", express.static("dist"));
 app.use((req, res) => {
   res.write(parts[0]);
